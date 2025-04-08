@@ -1,0 +1,46 @@
+{
+  "hash": "7b159ad0",
+  "configHash": "b1d75a0c",
+  "lockfileHash": "611ac943",
+  "browserHash": "95976882",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "60aaac2c",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "85f12f6d",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "804c5b66",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "6dea5de3",
+      "needsInterop": false
+    },
+    "@radix-ui/themes": {
+      "src": "../../node_modules/@radix-ui/themes/dist/esm/index.js",
+      "file": "@radix-ui_themes.js",
+      "fileHash": "b42aee36",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-WEJJOBXA": {
+      "file": "chunk-WEJJOBXA.js"
+    },
+    "chunk-VCDLJVZS": {
+      "file": "chunk-VCDLJVZS.js"
+    }
+  }
+}
