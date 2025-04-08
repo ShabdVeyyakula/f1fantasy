@@ -1,0 +1,417 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.f1-logo {
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.app-title {
+  color: var(--gray-12);
+  margin-bottom: 2rem;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name-input {
+  width: 100%;
+}
+
+.create-button {
+  width: 100%;
+  background-color: #e10600; /* F1 red color */
+}
+
+.create-button:hover {
+  background-color: #b30500;
+  cursor: pointer;
+}
+
+.signup-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15151e;
+  background-image: 
+    linear-gradient(rgba(21, 21, 30, 0.9), rgba(21, 21, 30, 0.9)),
+    url('https://www.formula1.com/content/dam/fom-website/manual/Misc/2024manual/2024Launches/SF-24Launch/Ferrari_SF-24_Front_34.jpg.transform/9col/image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 0 20px;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.f1-branding {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.app-title {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.red-stripe {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #e10600;
+  border-radius: 2px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.name-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #e10600;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.create-button {
+  background-color: #e10600 !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 16px !important;
+  width: 100% !important;
+  transition: all 0.2s !important;
+  border: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+}
+
+.create-button:hover {
+  background-color: #ff1801 !important;
+  transform: translateY(-1px);
+}
+
+.create-button:active {
+  transform: translateY(1px);
+}
+
+.team-builder-page {
+  min-height: 100vh;
+  background-color: #15151e;
+  padding: 40px 20px;
+  color: white;
+}
+
+.team-builder-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.budget-display {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.budget-badge {
+  font-size: 1.2rem !important;
+  padding: 12px 24px !important;
+}
+
+.selection-area {
+  display: grid;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: white;
+  margin-bottom: 24px;
+}
+
+.cards-container {
+  justify-content: center;
+  gap: 24px !important;
+}
+
+.constructor-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 280px;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.constructor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--team-color);
+}
+
+.constructor-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.constructor-card.selected {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--team-color);
+  box-shadow: 0 0 20px rgba(var(--team-color), 0.3);
+}
+
+.constructor-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.driver-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 220px;
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.driver-card:hover {
+  transform: translateY(-2px);
+}
+
+.driver-card.selected {
+  border-color: var(--team-color);
+  box-shadow: 0 0 20px rgba(var(--team-color), 0.3);
+}
+
+.driver-image {
+  width: 100%;
+  height: 160px;
+  background: linear-gradient(to right, var(--team-color), transparent);
+  position: relative;
+}
+
+.driver-image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 150px;
+  object-fit: contain;
+}
+
+.driver-content {
+  padding: 16px;
+}
+
+.driver-info {
+  margin-bottom: 12px;
+}
+
+.team-name {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.driver-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.country-badge, .cost-badge {
+  padding: 4px 8px !important;
+}
+
+.submit-team {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  background-color: #e10600 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 20px !important;
+}
+
+.submit-team:hover {
+  cursor: pointer;
+}
+
+.submit-team:not(:disabled):hover {
+  background-color: #ff1801 !important;
+  transform: translateY(-1px);
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #15151e;
+  padding: 40px 20px;
+  color: white;
+}
+
+.dashboard-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.team-row:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.team-dialog {
+  background-color: #1a1a24 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.team-details {
+  margin-top: 24px;
+  display: grid;
+  gap: 32px;
+}
+
+.section {
+  display: grid;
+  gap: 16px;
+}
+
+.items-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.team-stats {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.quit-button {
+  margin-top: 40px !important;
+  background-color: #333 !important;
+  color: white !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 200px !important;
+}
+
+.quit-button:hover {
+  background-color: #444 !important;
+  cursor: pointer;
+}
