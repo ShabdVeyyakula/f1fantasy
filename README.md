@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+# f1fantasy
+full stack decal project 2
